@@ -5,34 +5,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 	</head>
 	<body>
 
 		<!-- Menu -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Alexia's</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-		  
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item">
-				  <a class="nav-link scrolly" href="#one">Story</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link scrolly" href="#two">Experiences</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link scrolly" href="#three">Referrals</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link scrolly" href="#four">Talents</a>
-				</li>
-			  </ul>
-			</div>
-		  </nav>
+		<nav class="topnav responsive navbar-expand-lg navbar-light bg-light" id="myTopnav">
+			<a class="navbar-link scrolly" href="#">Alexia's</a>
+			<a href="#story" class="nav-link scrolly">Story</a>
+			<a href="#experiences" class="nav-link scrolly">Experiences</a>
+			<a href="#referrals" class="nav-link scrolly">Referrals</a>
+			<a href="#talents" class="nav-link scrolly">Talents</a>
+			<a href="#contact" class="nav-link scrolly">Contact</a>
+			<a href="javascript:void(0);" class="icon" data-toggle="collapse" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</nav>
 
 		<!-- Banner -->
 			<section id="banner">
@@ -40,13 +30,13 @@
 					<h1>Ipsum sed lorem</h1>
 					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br />sed arcu cras consecuat lorem ipsum dolor sit amet.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Hello there!</a></li>
+						<li><a href="#story" class="button scrolly">Hello there!</a></li>
 					</ul>
 				</div>
 			</section>
 
-		<!-- About -->
-			<section id="one" class="wrapper">
+		<!-- Story -->
+			<section id="story" class="wrapper">
 				<div class="inner flex flex-3">
 					<div class="flex-item left">
 						<div>
@@ -74,8 +64,8 @@
 				</div>
 			</section>
 
-		<!-- Experience -->
-		<section id="two" class="wrapper">
+		<!-- Experiences -->
+		<section id="experiences" class="wrapper">
 			<div class="inner flex flex-3">
 				<div class="flex-item box">
 					<div class="image fit">
@@ -107,8 +97,8 @@
 			</div>
 		</section>
 
-		<!-- Referral -->
-			<section id="three" class="wrapper style1 special">
+		<!-- Referrals -->
+			<section id="referrals" class="wrapper style1 special">
 				<div class="inner">
 					<h2>Referrals</h2>
 					<figure>
@@ -119,8 +109,8 @@
 				</div>
 			</section>
 
-		<!-- Talent -->
-		<section id="four" class="wrapper">
+		<!-- Talents -->
+		<section id="talents" class="wrapper">
 			<div class="inner flex flex-3">
 				<div class="flex-item left">
 					<div>
@@ -161,6 +151,16 @@
 			</footer>
 
 		<!-- Scripts -->
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
