@@ -323,9 +323,13 @@
 
 		}
 
-	a {
-		color: #25a2c3;
-		text-decoration: underline;
+	#referrals a {
+		color: #fff;
+	}
+
+	#referrals a:hover {
+		color: #343140;
+		text-decoration: none;
 	}
 
 
@@ -397,10 +401,6 @@
 		margin: 0 0 2em 0;
 	}
 
-	figure {
-		margin: 0 0 2em 0;
-	}
-
 	.align-left {
 		text-align: left;
 	}
@@ -434,7 +434,7 @@
 		}
 
 		.box .content {
-			padding: 1em;
+			padding: 0 0 1em 0;
 			text-align: center;
 		}
 
@@ -525,18 +525,15 @@ button,
 		position: relative;
 	}
 
-		.image img {
-			display: block;
-		}
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
 			width: 100%;
 		}
 
 			.image.fit img {
 				width: 100%;
+				padding: 0 0 1em 0;
 			}
 
 		.image.round img {
@@ -766,7 +763,7 @@ button,
 /* Wrapper */
 
 	.wrapper {
-		padding: 4em 0 2em 0;
+		padding: 4em 0 4em 0;
 	}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
@@ -786,6 +783,7 @@ button,
 			.wrapper.style1 cite.author {
 				color: #fff;
 			}
+		
 
 		@media screen and (max-width: 980px) {
 
@@ -924,7 +922,6 @@ button,
 
 	#referrals blockquote {
 		text-align: center;
-		padding-bottom: 1em;
 	}
 
 
@@ -975,14 +972,6 @@ button,
 
 	}
 
-	@media screen and (max-width: 736px) {
-
-		#footer .copyright {
-			padding: 2em 5em;
-		}
-
-	}
-
 	@media screen and (max-width: 480px) {
 
 		#footer {
@@ -997,9 +986,6 @@ button,
 					margin-left: -1em;
 				}
 
-			#footer .copyright {
-				padding: 2em 0;
-			}
 
 	}
 
