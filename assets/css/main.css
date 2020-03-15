@@ -557,7 +557,7 @@ button,
 		@media screen and (max-width: 480px) {
 
 			.image.fit {
-				margin: 0 auto 2em auto;
+				margin: 1em auto 1em auto;
 				max-width: 100%;
 			}
 			
