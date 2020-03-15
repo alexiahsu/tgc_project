@@ -13,9 +13,9 @@
 	<body>
 
 		<!-- Menu -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
 			<a class="navbar-brand" href="#">Alexia's</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler small" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -29,45 +29,78 @@
 			</div>
 		  </nav>
 
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<h1>Ipsum sed lorem</h1>
-					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br />sed arcu cras consecuat lorem ipsum dolor sit amet.</p>
-					<ul class="actions">
-						<li><a href="#story" class="button scrolly">Hello there!</a></li>
-					</ul>
-				</div>
+		<!-- Carousel -->
+			<section id="carousel">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<div class="carousel-caption">
+							<div class="container">
+								<h5>Analytical</h5>
+								<h6>I enjoy turning data-backed insights into solutions</h6>
+							</div>
+						</div>
+						<img class="d-flex h-100 w-100" src="images/banner1.jpg" alt="Analytical">
+					  </div>
+					  <div class="carousel-item">
+						<div class="carousel-caption">
+							<div class="container">
+								<h5>Innovative</h5>
+								<h6>I thrive on re-imagining the things that already are</h6>
+							</div>
+						</div>
+						<img class="d-block w-100" src="images/banner2.jpg" alt="Innovative">
+					  </div>
+					  <div class="carousel-item">
+						<div class="carousel-caption">
+							<div class="container">
+								<h5>Passionate</h5>
+								<h6>I caliberate my energy to each environment I am in</h6>
+							</div>
+						</div>
+						<img class="d-block w-100" src="images/banner3.jpg" alt="Passionate">
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
 			</section>
+
 
 		<!-- Story -->
 			<section id="story" class="wrapper">
-				<div class="inner flex flex-3">
-					<div class="flex-item left">
-						<div>
-							<h3>Magna ultricies</h3>
-							<p>Morbi in sem quis dui plalorem ipsum<br /> euismod in, pharetra sed ultricies.</p>
+					<div class="inner flex flex-3">
+						<div class="flex-item left">
+							<div>
+								<h3>Magna ultricies</h3>
+								<p>Morbi in sem quis dui plalorem ipsum<br /> euismod in, pharetra sed ultricies.</p>
+							</div>
+							<div>
+								<h3>Ipsum adipiscing lorem</h3>
+								<p>Tristique yonve cursus jam nulla quam<br /> loreipsu gravida adipiscing lorem</p>
+							</div>
 						</div>
-						<div>
-							<h3>Ipsum adipiscing lorem</h3>
-							<p>Tristique yonve cursus jam nulla quam<br /> loreipsu gravida adipiscing lorem</p>
+						<div class="flex-item image fit round">
+							<img src="images/profile.jpg" alt="" />
+							<br><a href="cv/alexia_cv.pdf" class="button" target="_blank">Download CV here!</a>
+						</div>
+						<div class="flex-item left">
+							<div>
+								<h3>Tempus nullam</h3>
+								<p>Sed adipiscing ornare risus. Morbi estes<br /> blandit sit et amet, sagittis magna.</p>
+							</div>
+							<div>
+								<h3>Suscipit nibh dolore</h3>
+								<p>Pellentesque egestas sem. Suspendisse<br /> modo ullamcorper feugiat lorem.</p>
+							</div>
 						</div>
 					</div>
-					<div class="flex-item image fit round">
-						<img src="images/profile.jpg" alt="" />
-					</div>
-					<div class="flex-item right">
-						<div>
-							<h3>Tempus nullam</h3>
-							<p>Sed adipiscing ornare risus. Morbi estes<br /> blandit sit et amet, sagittis magna.</p>
-						</div>
-						<div>
-							<h3>Suscipit nibh dolore</h3>
-							<p>Pellentesque egestas sem. Suspendisse<br /> modo ullamcorper feugiat lorem.</p>
-						</div>
-					</div>
-				</div>
 			</section>
 
 		<!-- Experiences -->
@@ -131,7 +164,7 @@
 				<div class="flex-item image fit round">
 					<img src="images/pic01.jpg" alt="" />
 				</div>
-				<div class="flex-item right">
+				<div class="flex-item left">
 					<div>
 						<h3>Tempus nullam</h3>
 						<p>Sed adipiscing ornare risus. Morbi estes<br /> blandit sit et amet, sagittis magna.</p>
@@ -151,7 +184,7 @@
 					<ul class="actions">
 						<li><span class="icon fa-phone"></span> <a href="tel:6592362766">(65) 9236-2766</a></li>
 						<li><span class="icon fa-envelope"></span> <a href="mailto:hsu.enyang@gmail.com">hsu.enyang@gmail.com</a></li>
-						<li><span class="icon fa-map-marker"></span> Based in Singapore</li>
+						<li><span class="icon fa-map-marker"></span> Singapore, but happy to move!</li>
 					</ul>
 				</div>
 			</footer>
